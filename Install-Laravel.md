@@ -1,7 +1,8 @@
-# Install Laravel- Pemograman Integratif
+# - Pemograman Integratif -
 **Difa Taufiqurrahman   1202199005**
----
 
+---
+# Step 1 Install Laravel
 ### Install PHP
 •	Download php di website https://windows.php.net/download#php-8.1. Kemudian pilih file zip 29,24 MB
 
@@ -52,6 +53,83 @@
 
 ![10](https://user-images.githubusercontent.com/92538741/173119860-9fef7860-0483-47fc-a318-13ee89276065.png)
 
+---
+# Step 2 - Menambahkan RSS
+---
+
+• Edit DB_DATABASE di .env sesuai dengan nama database yang sudah dibuat
+
+![image](https://user-images.githubusercontent.com/92538741/175817980-45c346fa-d293-474b-bc13-14f2ac54b51a.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175817973-0cd94ac8-2784-4cf0-a508-ad1a461825cc.png)
+
+
+• Buat migrations dengan 2 table rss dan news dengan comand seperti dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818043-03e3c01c-5378-4943-b292-8b2b2495b666.png)
+
+• Tambahkan kolom name dan url pada tabel rss, seperti pada gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818468-513529c4-b50c-4ff9-b79a-4cf6bf41b98a.png)
+
+• Tambahkan kolom title, img_url, description, source_url,  dan rss_id pada tabel news, seperti pada gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818512-227a795c-aa8f-4298-8b29-80a0eec8b1a6.png)
+
+• Untuk menjalankan migrasi yang dibuat jalankan perintah diterminal seperti dibawah, lalu cek database
+
+![image](https://user-images.githubusercontent.com/92538741/175818599-77e00771-3982-4a43-a1f2-b352a8e0365c.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175818648-a02d8b9c-ab9a-4924-a211-68f7b87f1c60.png)
+
+
+• Buat koneksi  model  ke database  dengan membuat seeder dan controller untuk tabel Rss dan News dengan perintah seperti gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818706-aa0ecf68-4627-4f80-80cb-7fa076ce4611.png)
+
+• Edit file Rss.php, RssSeeder.php serta DatabaseSeeder.php seperti pada gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818760-ce10d5f3-5b72-4fc8-aaaf-42b7319d19fc.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175818751-5d9cebbc-b1e3-4e6d-928a-3575bff6bfc6.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175818744-34b16e1a-18b8-4641-8b40-b5fe1fc6e9aa.png)
+
+• Kemudian cek koneksi dengan perintah, kemudian cek database
+
+![image](https://user-images.githubusercontent.com/92538741/175818855-289b46e8-c6b4-4c6f-b02f-b0e3aa325bb8.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175818935-fc5dfee2-a60f-44b6-b183-c7f84c34c439.png)
+
+• Jalankan comand seperti gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175818995-240a0a29-6184-44d1-a00b-d2c030197b61.png)
+
+• Edit file News.php, web.php, NewsController.php, serta file migration News seperti pada gambar dibawah
+
+![image](https://user-images.githubusercontent.com/92538741/175819003-c8f876df-39d7-4923-b7a2-3957e6eec6c6.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175819026-fcdccd8e-c8bb-4cd0-a32c-c9c77e8afa91.png)
+
+![image](https://user-images.githubusercontent.com/92538741/175819260-7a4b53a5-b6a4-4c68-8321-16762e55c820.png)
+
+
+
+• Cek local host http://127.0.0.1:8000/aggregate/1
+
+![image](https://user-images.githubusercontent.com/92538741/175819284-f7d7eaef-9e0f-4e41-9754-c8e205b92a5b.png)
+
+• Cek local host http://127.0.0.1:8000/aggregate/4
+
+![image](https://user-images.githubusercontent.com/92538741/175819323-03437e2f-ea15-4b8e-a232-f3bd5f82fa80.png)
+
+• Cek local host http://127.0.0.1:8000/aggregate/5
+
+![image](https://user-images.githubusercontent.com/92538741/175819346-3c139d0f-7fe8-4480-9696-562b380b75e1.png)
+
+• Database phpmyadmin
+
+![image](https://user-images.githubusercontent.com/92538741/175819477-763466a7-8731-44e4-9122-bf9074ec39ed.png)
 
 ### Difa Taufiqurrahman | 1202199005 
 
